@@ -1,0 +1,37 @@
+version: '3.3'
+
+networks:
+  brnet:
+    ipam:
+      config:
+        - subnet: 172.21.0.0/16
+
+services:
+  web:
+    container_name: web
+    build:
+      context: ./src/web
+      dockerfile: Dockerfile
+    depends_on:
+      - "maria"
+    networks:
+      brnet:
+        ipv4_address: 172.21.0.3
+    ports:
+      - "3000:3000"
+    command: >
+      bash -c "sh docker-entrypoint.sh"
+
+  maria:
+    container_name: maria
+    build: 
+      context: ./src/maria
+      dockerfile: Dockerfile
+    networks:
+      brnet:
+        ipv4_address: 172.21.0.2
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "33306:3306"
+      
