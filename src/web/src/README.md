@@ -1,6 +1,3 @@
-# express-maria-singup
-express-maria-singup
-
     GET /v1/user
     DELETE /v1/user
     POST /v1/user/register
