@@ -29,5 +29,6 @@ https://docs.docker.com/engine/install/
 ## Clean Docker Conatainer
 1. clean shell script start
 ```
-sh clean.sh
+1. cd rest-api-docker
+2. sh clean.sh
 ```
