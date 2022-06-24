@@ -18,7 +18,7 @@ https://docs.docker.com/engine/install/
 2. docker-compose up
 ```
 
-## Url
+## API Url
 
     GET /v1/user
     DELETE /v1/user
