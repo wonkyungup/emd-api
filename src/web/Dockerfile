@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:focal
 
 RUN apt update -y && apt upgrade -y
 RUN apt install -y curl sudo
