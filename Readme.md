@@ -14,7 +14,7 @@ https://docs.docker.com/engine/install/
 
 2. run docker-compose
 ```
-1. cd express-maria-singup-docker
+1. cd rest-api-docker
 2. docker-compose up
 ```
 
