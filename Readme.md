@@ -25,3 +25,9 @@ https://docs.docker.com/engine/install/
     POST /v1/user/register
     POST /v1/auth
     GET /v1/auth
+
+## Clean Docker Conatainer
+1. clean shell script start
+```
+sh clean.sh
+```
