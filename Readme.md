@@ -30,5 +30,5 @@ https://docs.docker.com/engine/install/
 1. clean shell script start
 ```
 1. cd rest-api-docker
-2. sh clean.sh
+2. sh docker-clean.sh
 ```
