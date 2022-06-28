@@ -8,10 +8,9 @@ RUN npm install -g npm@latest
 RUN npm install -g express
 RUN mkdir /app
 
-WORKDIR /app
-
 COPY src/ /app
-COPY docker-entrypoint.sh /app/docker-entrypoint.sh
-ENTRYPOINT ["sh", "/app/docker-entrypoint.sh"]
+COPY wait-for-it.sh /usr/local/bin/
+COPY docker-entrypoint.sh /usr/local/bin/
+ENTRYPOINT ["docker-entrypoint.sh"]
 
 EXPOSE 3000

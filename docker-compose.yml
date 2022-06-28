@@ -12,8 +12,6 @@ services:
     build:
       context: ./src/web
       dockerfile: Dockerfile
-    depends_on:
-      - "maria"
     networks:
       brnet:
         ipv4_address: 172.21.0.3
