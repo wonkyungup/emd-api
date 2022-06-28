@@ -6,6 +6,7 @@
 > Tool
 - docker (https://www.docker.com)
 - docker-compose (https://docs.docker.com/compose)
+- wait-for-it (https://github.com/vishnubob/wait-for-it)
 ## How to use
 1. You need to docker install
 ```
